@@ -50,7 +50,7 @@ function CreateTrip() {
       setOpenDialog(true)
       return ;
     }
-    if(formData?.totalDays>5 || !formData?.location || !formData?.budget || !formData?.traveler){
+    if(formData?.totalDays>15 || !formData?.location || !formData?.budget || !formData?.traveler){
       toast("Please fill all details!")
       return ;
     }
@@ -176,7 +176,7 @@ function CreateTrip() {
         <DialogContent>
           <DialogHeader>
             <DialogDescription>
-              <img src="/logo.svg"/>
+              <span className="text-2xl font-extrabold text-[#1A73E8]">WanderAI ✈️</span>
               <h2 className="font-bold text-lg mt-6">Sign In with Google</h2>
               <p>Sign In to the App with Google authentication securely</p>
               <Button
