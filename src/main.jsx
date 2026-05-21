@@ -30,8 +30,7 @@ const router = createBrowserRouter([
 }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_AUTH_CLIENT_ID}>
-      <Header/>
+<GoogleOAuthProvider clientId="276641208497-qqcr2vel2mcks77u9joa8chbnihciu3g.apps.googleusercontent.com">      <Header/>
       <Toaster />
       <RouterProvider router={router}/>
     </GoogleOAuthProvider>
